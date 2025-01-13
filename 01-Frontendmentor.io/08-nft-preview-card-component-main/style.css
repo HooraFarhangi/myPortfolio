@@ -1,0 +1,187 @@
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+/* > 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens. */
+
+/* ## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%) */
+
+/* - Font size (paragraph): 18px */
+
+/* ### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
+
+html {
+  font-size: 62.5%;
+  font-family: outfit, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  background-color: hsl(216, 50%, 16%);
+  width: 30rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.img-container {
+  position: relative;
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.article-img {
+  width: 100%;
+  align-self: center;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s;
+  background-color: rgba(0, 255, 247, 0.4);
+}
+
+.view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-container:hover .overlay {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.article-title {
+  font-size: 2rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.article-title:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.article-description {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+  line-height: 1.5;
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-between;
+}
+.eth {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.price {
+  color: hsl(178, 100%, 50%);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.timing {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.time {
+  color: hsl(215, 51%, 70%);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.creator {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.creator-avatar {
+  width: 12%;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.creator-name {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  color: hsl(215, 51%, 70%);
+}
+
+.creator-name span {
+  color: hsl(0, 0%, 100%);
+  transition: 0.3s;
+}
+
+.creator-name span:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+/*******************************/
+/*  BELOW 544px (Phones)*/
+/*******************************/
+@media (max-width: 34em) {
+  html {
+    /*  8px / 16px  */
+    font-size: 65%;
+  }
+  article {
+    width: 30rem;
+    padding: 2.5rem;
+  }
+}

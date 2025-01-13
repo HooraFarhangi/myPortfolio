@@ -1,0 +1,79 @@
+/*******************************/
+/*  BELOW 1344px (Smaller desktops)*/
+/*******************************/
+
+/* 1350 / 16 ~= 84 */
+@media (max-width: 84em) {
+}
+
+/*******************************/
+/*  BELOW 1200px (Landscape tablets)*/
+/*******************************/
+
+@media (max-width: 75em) {
+  html {
+    /*  8px / 16px  */
+    font-size: 50%;
+  }
+}
+
+/*******************************/
+/*  BELOW 944px (Tablets)*/
+/*******************************/
+
+@media (max-width: 59em) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .main-header {
+    font-size: 3.2rem;
+  }
+
+  .sub-header {
+    font-size: 2.4rem;
+  }
+}
+
+/*******************************/
+/*  BELOW 704px (Smaller tablets)*/
+/*******************************/
+
+@media (max-width: 44em) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .sub-header {
+    line-height: 1.5;
+  }
+}
+
+/*******************************/
+/*  BELOW 544px (Phones)*/
+/*******************************/
+
+@media (max-width: 34em) {
+  .section {
+    padding: 8rem;
+    margin-bottom: 0;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+  }
+
+  .main-header {
+    padding: 3rem;
+    font-size: 2.8rem;
+    margin-bottom: 0;;
+  }
+
+  .sub-header {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+}

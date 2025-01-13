@@ -1,0 +1,275 @@
+/* @font-face {
+  font-family: "HankenGrotesk";
+  src: URL("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+} */
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  font-size: 1.8rem;
+}
+
+article {
+  display: flex;
+  width: 70rem;
+  height: 48rem;
+  gap: 2rem;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 30px 30px rgba(128, 149, 234, 0.174);
+}
+
+.col-1 {
+  width: 50%;
+  background: rgb(46, 43, 233);
+  background: linear-gradient(
+    0deg,
+    rgba(46, 43, 233, 1) 0%,
+    rgba(120, 87, 255, 1) 100%
+  );
+  color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.col-2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  padding: 0 2rem;
+}
+
+.col-1 h3 {
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.score {
+  background: linear-gradient(
+    0deg,
+    hsla(241, 72%, 46%, 0) 0%,
+    hsla(256, 72%, 46%, 1) 100%
+  );
+
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#num-76 {
+  font-size: 7.4rem;
+  font-weight: 800;
+}
+
+#num-100 {
+  color: rgba(200, 199, 255, 0.47);
+  font-weight: 600;
+}
+
+.great {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.description {
+  width: 75%;
+  text-align: center;
+  color: rgb(200, 199, 255);
+}
+
+.col-2 h3 {
+  color: rgb(48, 59, 90);
+  font-size: 2.4rem;
+  margin-top: 3rem;
+  font-weight: 700;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.li {
+  display: flex;
+  gap: 1rem;
+  width: 28rem;
+  padding: 1.5rem 1.5rem;
+  border-radius: 8px;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.li:first-child {
+  justify-self: flex-start;
+}
+
+.li:last-child {
+  justify-self: flex-end;
+}
+
+.reaction {
+  background-color: rgba(255, 87, 87, 0.07);
+  color: rgb(255, 87, 87);
+}
+
+.memory {
+  background-color: rgba(255, 176, 31, 0.07);
+  color: rgb(255, 176, 31);
+}
+
+.verbal {
+  background-color: rgba(0, 189, 145, 0.07);
+  color: rgb(0, 189, 145);
+}
+
+.visual {
+  background-color: rgba(17, 37, 212, 0.07);
+  color: rgb(17, 37, 212);
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  border: none;
+  background-color: rgb(48, 59, 90);
+  padding: 1.5rem;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border-radius: 50px;
+  text-align: center;
+  width: 28rem;
+}
+
+.btn:hover,
+.btn:active {
+  background: linear-gradient(
+    0deg,
+    rgb(36, 33, 202) 0%,
+    rgb(120, 87, 255) 100%
+  );
+  cursor: pointer;
+}
+
+.icon {
+  display: flex;
+  gap: 1rem;
+}
+
+.score-num {
+  color: #aaa;
+  font-weight: 600;
+}
+
+.score-num span {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+
+.attribution {
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.attribution a {
+  color: rgb(62, 82, 163);
+}
+
+/*******************************/
+/*  BELOW 704px (Phones)*/
+/*******************************/
+
+@media (max-width: 44em) {
+  html {
+    /*  8px / 16px  */
+    font-size: 50%;
+  }
+
+  body {
+    display: block;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    gap: 1rem;
+    padding-bottom: 4rem;
+  }
+  .col-1 {
+    width: 100%;
+    background: rgb(46, 43, 233);
+    background: linear-gradient(
+      0deg,
+      rgba(46, 43, 233, 1) 0%,
+      rgba(120, 87, 255, 1) 100%
+    );
+    color: hsl(0, 0%, 100%);
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .col-1 h3 {
+    margin-top: 4rem;
+    font-size: 2.4rem;
+  }
+
+  .description {
+    width: 65%;
+    margin-bottom: 4rem;
+  }
+
+  .col-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding: 0 4rem;
+  }
+
+  .col-2 h3 {
+    margin-top: 1.8rem;
+  }
+
+  .li {
+    width: 100%;
+  }
+
+  .btn:link,
+  .btn:visited {
+    width: 100%;
+  }
+}

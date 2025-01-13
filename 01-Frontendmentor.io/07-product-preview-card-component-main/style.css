@@ -1,0 +1,141 @@
+html {
+  font-size: 62.5%;
+  font-family: montserrat, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+article {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  width: 60rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-img {
+  background-image: url(images/image-product-desktop.jpg);
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-text {
+  width: 50%;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.tag {
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 0.5rem;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.title {
+  font-family: fraunces;
+  font-size: 3.2rem;
+  letter-spacing: 0.05rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.description {
+  color: hsl(228, 12%, 48%);
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.discount-price {
+  font-family: fraunces;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+
+.price {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  font-family: montserrat;
+  /* border: none; */
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  padding: 1.4rem 0;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 1.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: all 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: hsl(158, 35%, 24%);
+}
+
+/*******************************/
+/*  BELOW 704px (Phones)*/
+/*******************************/
+
+@media (max-width: 44em) {
+  html {
+    /*  8px / 16px  */
+    font-size: 58%;
+  }
+}
+
+/*******************************/
+/*  BELOW 555px (Phones)*/
+/*******************************/
+@media (max-width: 35em) {
+  article {
+    flex-direction: column;
+    margin: 2.4rem;
+    width: 100%;
+  }
+  .card-img {
+    min-height: 38vh;
+    width: 100%;
+  }
+
+  .card-text {
+    width: 100%;
+    gap: 1.5rem;
+  }
+}

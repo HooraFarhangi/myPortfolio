@@ -1,0 +1,115 @@
+/* colors:
+text: #495057
+background: #f8f9fa
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: outfit, sans-serif;
+  color: #5D576B;
+}
+
+.main-header {
+  /* font-family: oleo script; */
+  font-family: outfit, sans-serif;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.651);
+  grid-row: 1;
+  grid-column: 1/-1;
+  background-color: #00bbf9;
+  font-size: 3.2rem;
+  padding: 4rem;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  letter-spacing: 1px;
+  filter: drop-shadow(0 0 1.5rem rgba(75, 80, 83, 0.53));
+  margin-bottom: 4rem;
+}
+
+.sub-header {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #5d576b;
+  margin-bottom: 3rem;
+}
+
+hr {
+  width: 20rem;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.section {
+  padding: 4rem;
+  margin-bottom: 3rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  /* border: 1px solid #ddd; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 0;
+  filter: drop-shadow(0 0 0.75rem rgba(75, 80, 83, 0.15));
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  /* border: 1px solid #86a8e7; */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.307); */
+  filter: drop-shadow(0 0 0.35rem rgba(0, 0, 0, 0.307));
+  transform: translateY(-0.5rem);
+}
+
+.card-img {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.card-btn:link,
+.card-btn:visited {
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  background-color: #00bbf9;
+  border: 2px solid #00bbf9;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1.6rem;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.307);
+  transition: all 0.3s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: #00a8e0;
+  color: #fff;
+  border: 2px solid #00a8e0;
+}
