@@ -1,0 +1,22 @@
+import { Badge } from "@chakra-ui/react";
+
+interface Props {
+  score: number;
+}
+
+function CriticScore({ score }: Props) {
+  let color = score > 75 ? "green.300" : score > 60 ? "yellow.500" : "";
+  let background = score > 75 ? "#3B4C2D" : score > 60 ? "#988204" : "";
+  return (
+    <Badge
+      color={color}
+      fontSize="14px"
+      paddingX={2}
+      borderRadius="4px"
+      backgroundColor={background}
+    >
+      {score}
+    </Badge>
+  );
+}
+export default CriticScore;
