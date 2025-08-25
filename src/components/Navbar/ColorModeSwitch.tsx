@@ -35,7 +35,7 @@ function ColorModeSwitch() {
           <Icon as={FaMoon} color="yellow.400" />
         </Switch.Indicator>
       </Switch.Control>
-      <Switch.Label>Dark Mode</Switch.Label>
+      <Switch.Label whiteSpace="nowrap">Dark Mode</Switch.Label>
     </Switch.Root>
   );
 }
